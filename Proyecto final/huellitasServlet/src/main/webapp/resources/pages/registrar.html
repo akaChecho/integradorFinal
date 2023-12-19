@@ -1,0 +1,56 @@
+<div class="offcanvas offcanvas-start text-bg-secondary" tabindex="-1" id="staticBackdropRegistrar" aria-labelledby="staticBackdropLabel" > 
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+    </div>
+    <div class="container rounded-pill d-block w-75">
+        <form>
+            
+            <div class="mb-3">
+                <label for="nombre" class="form-label"  placeholder="Nombre">Nombre</label>
+                <input type="nombre" class="form-control" id="inputNombre" aria-describedby="nombre" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="apellido" class="form-label"  placeholder="Apellido">Apellido</label>
+                <input type="apellido" class="form-control" id="inputApellido" aria-describedby="apellido" placeholder="Apellido">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label"  placeholder="Correo electronico">Correo Electronico</label>
+                <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Correo Electronico">
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label"  placeholder="Teléfono">Télefono</label>
+                <input type="telefono" class="form-control" id="inputTelefono" aria-describedby="telefono" placeholder="Télefono">
+            </div>
+              <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+              <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="inputTyC">
+                  <label class="form-check-label" for="inputTyC">Acepto términos y condiciones</label>
+              </div>
+              <button type="registrar" class="btn btn-primary" onclick="alert_Login()">Registrarse</button>
+          </form>
+      </div>
+ 
+    
+    <div class="offcanvas offcanvas-start text-bg-secondary" tabindex="-1" id="staticBackdropIngresar" aria-labelledby="staticBackdropLabel"> 
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="container rounded-pill d-block w-75">
+        <form action="LoginServlet" method="post">
+            <div class="mb-3">
+                <label for="email" class="form-label" placeholder="Correo electronico"></label>
+                <input type="email" class="form-control" id="userEmail" name="email" aria-describedby="emailHelp" placeholder="admin@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="contrasena" class="form-label"></label>
+                <input type="password" class="form-control" id="userContrasena" name="contrasena" placeholder="admin123">
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
+    </div>
+</div>
